@@ -6,6 +6,7 @@
   --pure: #ffffff;
   --ternary: #898989;
   --light: #F2F2F2;
+  break-before: always;
 }
 
 body {
