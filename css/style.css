@@ -178,7 +178,7 @@ padding: 0.5rem;
 .section-heading + p{
   color: var(--ternary);
   font-family: 'Lato', sans-serief;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   text-align: center;
 }
 
@@ -188,19 +188,48 @@ section.services{
 section.services .card-wrapper{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
 }
 
-/* section.services .card-wrapper{
-  column-width: 2rem;
-} */
-
-section.services .card-wrapper{
+section.services .card-wrapper .card{
+  position: relative;
   background: var(--pure);
-  padding: 3rem 2rem;
+  padding: 5rem 2rem 2rem 2rem;
+  padding-top: 4rem;
+  text-align: center;
+  transition: all .3s ease;
 }
 
-
-section.services .card-wrapper .card img{
+section.services .card-wrapper .card i{
+  font-size: 2.5rem;
+  background-color: var(--primary);
   position: absolute;
-
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.2rem;
 }
+
+section.services .card-wrapper .card h2{
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+  font-family: 'LAto', sans-serif;
+  color: var(--ternary);
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+
+section.services .card-wrapper .card:hover{
+  background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+  color: var(--pure);
+}
+
+
