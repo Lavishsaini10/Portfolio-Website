@@ -13,6 +13,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -500,10 +504,13 @@ footer .footer-socials a {
   color: var(--light);
 }
 
-footer .footer-socials {
+footer .footer-socials-wrapper {
   margin-bottom: 3rem;
-  margin-right: -1rem;
   font-size: 1.3rem;
+}
+
+footer .footer-socials-wrapper .footer-socials {
+  margin-right: -1rem;
 }
 
 footer .footer-socials i:hover{
